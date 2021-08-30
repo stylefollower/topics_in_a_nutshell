@@ -1,0 +1,16 @@
+Connecting strings; Single Quotes - Double Quotes
+
+
+In JavaScript, Strings are values made up of text and can contain letters, numbers, symbols, punctuation, and even emojis!
+
+Strings in JavaScript are contained within a pair of either single quotation marks '' or double quotation marks "". Both quotes represent strings but be sure to choose one and STICK WITH IT. If you start with a single quote, you need to end with a single quote. There are pros and cons to using both IE single quotes tend to make it easier to write HTML within Javascript as you don’t have to escape the line with a double quote.
+
+Let’s say you’re trying to use quotation marks inside a string. You’ll need to use opposite quotation marks inside and outside of JavaScript single or double quotes. That means strings containing single quotes need to use double quotes and strings containing double quotes need to use single quotes.
+
+
+
+Beispiel 1:
+
+
+
+Beispiel 2:
