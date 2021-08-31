@@ -1,4 +1,7 @@
+<?php
+require_once '../config.php';
 require_once 'header.inc.php';
+?>
 <main>
     <div class="container">
         <h1>Connecting strings; Single Quotes - Double Quotes</h1> <!-- TITLE -->
@@ -15,8 +18,8 @@ require_once 'header.inc.php';
             </p>
         </div>
     
-        <div class="codeArea flex-container codeExample">
-            <div class="col-6 code">
+        <div class="codeArea flex-container mw-100 codeExample">
+            <div class="col-md-6 col-sm-12 code">
                 <h4>Code:</h4>
                 <p>
                 let answer1 = "It's alright";<br>
@@ -26,7 +29,7 @@ require_once 'header.inc.php';
                 document.getElementById("demo").innerHTML = answer1 + "&lt;br&gt;" + answer2 + "&lt;br&gt;" + answer3;<br>
                 </p>
             </div>
-            <div class="col-6 output">
+            <div class="col-md-6 col-sm-12 output">
                 <h4>Output:</h4>
                 <p>
                     <p id="demo"></p>
@@ -56,4 +59,6 @@ require_once 'header.inc.php';
         console.log(origin);
     }
 </script>
+<?php 
 require_once 'footer.inc.php';
+?>
