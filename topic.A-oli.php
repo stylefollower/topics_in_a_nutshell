@@ -1,6 +1,6 @@
 <?php
-require_once '../config.php';
-require_once 'header.inc.php';
+//require_once '../config.php';
+//require_once 'header.inc.php';
 ?>
 <main>
     <div class="container">
@@ -34,31 +34,41 @@ require_once 'header.inc.php';
                 <p>
                     <p id="demo"></p>
                     <p id="demo1"></p>
+                    <p id="output"></p>
                     <!-- OUTPUT HERE -->
                 </p>
-                <button class="btn run" onclick="run(this)">Run</button>
-                <button class="btn reset" onclick="reset(this)">Reset</button>
+                <button class="btn run" onclick="run()">Run</button>
+                <button class="btn reset" onclick="reset()">Reset</button>
             </div>
         </div>
     </div>
 
-    <div class="tableOfContent">
-        <ul>
-            <li><a href="#"></a>Link</li>
-        </ul>
+    <br>
+    <br>
+    <div class="col-md-6 col-sm-12 output">
+        <h4>Pearl links:</h4>
+        <p>
+        https://www.w3schools.com/js/js_strings.asp
+        </p>
     </div>
 </main>
 
 <script src="topic_in_a_nutshell.js"></script>
 
 <script>
-    function run (origin) {
-        origin = origin.previousElementSibling;
+    function run () {
+        origin = document.getElementById("output")
         origin.innerHTML =  "It's alright<br>"+"He is called 'Johnny'<br>"+'He is called "Johnny"'
         //origin.style.backgroundColor = "red"
         console.log(origin);
     }
+
+    function reset (){
+        origin = document.getElementById("output")
+        origin.innerHTML =  ""
+}
+
 </script>
 <?php 
-require_once 'footer.inc.php';
+//require_once 'footer.inc.php';
 ?>
